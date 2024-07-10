@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset=UTF-8>
+	<meta http-equiv=X-UA-Compatible content="IE=edge">
+	<meta name=viewport content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./scss/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+	<title>BG Demo</title>
+</head>
+
+<header>
+	<div class="header-container">
+		<div class="logo">
+			<a href="#" idnum="0"><img src="./images/pc/bg-logo-e.png"></a>
+		</div>
+		<div class="nav-ham nav1"><span></span><span></span><span></span></div>
+		<div class="nav-mask nav-mask1 nav1"></div>
+		<div class="nav-mask nav-mask2 nav2"></div>
+		<div class="lang-mobile lang-box-h5"></div>
+
+		<div class="lang-bottom h5">
+			<ul class="lang-ul">
+				<li data-type="lang" class="lang-li nav2 zh">CH</li>
+				<li data-type="lang" class="lang-li nav2 en">EN</li>
+				<li data-type="lang" class="lang-li nav2 vn">VN</li>
+				<li data-type="lang" class="lang-li nav2 th">TH</li>
+				<li data-type="lang" class="lang-li nav2 id">ID</li>
+				<li data-type="lang" class="lang-li nav2 kr">KO</li>
+				<li data-type="lang" class="lang-li nav2 jp">JA</li>
+				<li data-type="lang" class="lang-li nav2 pt">PT</li>
+				<li class="lang-li nav2">Cancel</li>
+			</ul>
+		</div>
+
+		<nav class="nav-main">
+			<ul class="nav-ul">
+				<li class="nav-item h5">
+					<a><img src="./images/h5/logo-e.png"></a>
+					<span class="nav1 nav-ham-close">
+						<img src="./images/h5/icon_close_h.png">
+					</span>
+				</li>
+				<li class="nav-item not-line input-item h5">
+					<div class="input-area">
+						<input type="text" maxlength="11" class="search-input">
+						<img src="./images/pc/top/search.png">
+						<img src="./images/h5/icon_close_h.png">
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="item active" href="#" idnum="1">
+						<p class="nav-item-text">HOME</p>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="item">
+						<p class="nav-item-text">ABOUT</p>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="item">
+						<p class="nav-item-text">SERVICES</p>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="item">
+						<p class="nav-item-text">GAMES</p>
+					</a>
+				</li>
+				<li class="nav-item not-line">
+					<a class="item">
+						<p class="nav-item-text">NEWS</p>
+					</a>
+				</li>
+
+				<li class="nav-item not-line input-item pc">
+					<div class="input-area">
+						<input type="text" maxlength="11" class="search-input" placeholder="search">
+						<img src="./images/pc/top/search.png">
+					</div>
+				</li>
+				<li class="nav-item not-line contact-item">
+					<div class="contact-area">
+						<img src="./images/pc/top/contact.png">
+						<span>Contact us</span>
+					</div>
+				</li>
+				<li class="nav-item not-line lang-item pc">
+					<div class="lang-box">
+						<a class="lang-select">
+							<img src="./images/pc/lang/en.png">
+							<p class="nav-item-text"><span>EN</span></p>
+							<ul class="lang-select-box">
+								<li data-type="lang" class="zh">
+									<img src="./images/pc/lang/zh.png">
+									<span data-type="lang" data-id="zh">CH</span>
+								</li>
+								<li data-type="lang" class="en">
+									<img src="./images/pc/lang/en.png">
+									<span data-type="lang" data-id="en">EN</span>
+								</li>
+								<li data-type="lang" class="vn">
+									<img src="./images/pc/lang/vn.png">
+									<span data-type="lang" data-id="vn">VN</span>
+								</li>
+								<li data-type="lang" class="th">
+									<img src="./images/pc/lang/th.png">
+									<span data-type="lang" data-id="th">TH</span>
+								</li>
+								<li data-type="lang" class="id">
+									<img src="./images/pc/lang/id.png">
+									<span data-type="lang" data-id="id">ID</span>
+								</li>
+								<li data-type="lang" class="kr">
+									<img src="./images/pc/lang/kr.png">
+									<span data-type="lang" data-id="kr">KO</span>
+								</li>
+								<li data-type="lang" class="jp">
+									<img src="./images/pc/lang/jp.png">
+									<span data-type="lang" data-id="jp">JA</span>
+								</li>
+								<li data-type="lang" class="pt">
+									<img src="./images/pc/lang/pt.png">
+									<span data-type="lang" data-id="pt">PT</span>
+								</li>
+							</ul>
+						</a>
+					</div>
+				</li>
+
+				<li class="nav-item lang-item h5">
+					<div class="lang-box-h5">
+						<a class="lang-select">
+							<img src="./images/pc/lang/en.png">
+							<p class="nav-item-text h5"><span>EN</span></p>
+						</a>
+					</div>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+<body>
+	<div class="container">
+		<div class="pageItem">
+			<a href="#one" class="active" idnum="1"></a>
+			<a href="#two" idnum="2"></a>
+			<a href="#three" idnum="3"></a>
+			<a href="#four" idnum="4"></a>
+			<a href="#five" idnum="5"></a>
+		</div>
+
+		<!-- slider -->
+		<section class="home-box banner-box" id="one">
+			<div class="container-swiper">
+				<div class="slider-wrapper">
+					<div class="bg-background">
+						<div class="bg"></div>
+						<div class="bg bg2"></div>
+						<div class="bg bg3"></div>
+					</div>
+					<div class="slider pc ">
+						<div class="slide">
+							<div class="item">
+								<img src="./images/pc/banner/banner1.png" alt="" />
+								<div class="slide-text">
+									<div class="top-title">White-Label Provider</div>
+									<div class="title1">Global</div>
+									<div class="title2">White-lable</div>
+									<div class="bottom-title">Southeast Asian Leading</div>
+								</div>
+								<div class="slide-image slide-image-1">
+									<img src="./images/pc/banner/b1/b1-1.png" alt="" />
+									<img src="./images/pc/banner/b1/b1-2.png" alt="" />
+									<img src="./images/pc/banner/b1/b1-3.png" alt="" />
+									<img src="./images/pc/banner/b1/b1-4.png" alt="" />
+									<img src="./images/pc/banner/b1/b1-5.png" alt="" />
+								</div>
+							</div>
+							
+							<div class="item item-2">
+								<img src="./images/pc/banner/banner2.png" alt="" />
+								<div class="slide-text">
+									<div class="title1">BG Galaxy</div>
+									<div class="title2">Treasure</div>
+									<div class="bottom-title-2">
+										<div>Galactic Themes and</div>
+										<div>Big Prizes Grab the Treasure</div>
+										<div>and Get the Best Rewards</div>
+									</div>
+								</div>
+								<div class="slide-image slide-image-2">
+									<img src="./images/pc/banner/b2/b2-1.png" alt="" />
+									<img src="./images/pc/banner/b2/b2-2.png" alt="" />
+									<img src="./images/pc/banner/b2/b2-3.png" alt="" />
+									<img src="./images/pc/banner/b2/b2-4.png" alt="" />
+								</div>
+							</div>
+							
+							<div class="item">
+								<img src="./images/pc/banner/banner3.png" alt="" />
+								<div class="slide-text">
+									<div class="top-title">24-hour Companionship!</div>
+									<div class="title1">BG</div>
+									<div class="title2">Live Casino</div>
+									<div class="bottom-title">Easy-to-follow record sheets Easy-to-place bets</div>
+								</div>
+								<div class="slide-image slide-image-3">
+									<img src="./images/pc/banner/b3/b3-1.png" alt="" />
+									<img src="./images/pc/banner/b3/b3-2.png" alt="" />
+									<img src="./images/pc/banner/b3/b3-3.png" alt="" />
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="slider h5">
+						<div class="slide">
+							<img src="./images/h5/banner/banner1.png" alt="" />
+							<img src="./images/h5/banner/banner2.png" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- services -->
+		<section class="home-box reveal" id="two">
+			<div class="home-title blue-title reveal service-title">
+				SERV<span>ICES</span>
+			</div>
+			<div class="hexagon-bg pc">
+				<div class="hexagon-image reveal">
+					<div class="top-image">
+						<img src="./images/pc/service/home_services_02.png">
+						<img src="./images/pc/service/home_services_01.png" class="img-service">
+					</div>
+					<div class="hexBg">
+						<div class="hexTop"></div>
+						<div class="hexBottom"></div>
+					</div>
+					<div class="bottom-text">
+						<div class="text">White-Label
+							<span>Services</span>
+						</div>
+						<div class="detail">
+							We offer 3 major kinds of white-label services, namely Poker games, and composite
+							white-labeling service.
+						</div>
+						<div class="more">More</div>
+					</div>
+				</div>
+				<div class="hexagon-image reveal">
+					<div class="top-image">
+						<img src="./images/pc/service/home_api_02.png" class="img-bird">
+						<img src="./images/pc/service/home_api_01.png" class="img-api">
+					</div>
+					<div class="hexBg">
+						<div class="hexTop"></div>
+						<div class="hexBottom"></div>
+					</div>
+					<div class="bottom-text">
+						<div class="text">API
+							<span>Interface</span>
+						</div>
+						<div class="detail">
+							High-quality games at low prices translate to higher profits for our clients!
+						</div>
+						<div class="more">More</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="h5">
+				<div class="slide2 service-slide slider-wrapper">
+					<div class="hexagon-image reveal">
+						<div class="top-image">
+							<img src="./images/pc/service/home_services_01.png" class="img-3c">
+							<img src="./images/pc/service/home_services_02.png" class="img-woman">
+						</div>
+						<div class="hexBg">
+							<div class="hexTop"></div>
+							<div class="hexBottom"></div>
+						</div>
+						<div class="bottom-text">
+							<div class="text">White-Label
+								<span>Services</span>
+							</div>
+							<div class="detail">
+								We offer 3 major kinds of white-label services, namely Poker games, and composite
+								white-labeling service.
+							</div>
+							<div class="more">More</div>
+						</div>
+					</div>
+					<div class="hexagon-image reveal">
+						<div class="top-image">
+							<img src="./images/pc/service/home_api_01.png" class="img-api">
+							<img src="./images/pc/service/home_api_02.png" class="img-bird">
+						</div>
+						<div class="hexBg">
+							<div class="hexTop"></div>
+							<div class="hexBottom"></div>
+						</div>
+						<div class="bottom-text">
+							<div class="text">API
+								<span>Interface</span>
+							</div>
+							<div class="detail">
+								High-quality games at low prices translate to higher profits for our clients!
+							</div>
+							<div class="more">More</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="hexagonBox hexagonBox-l">
+				<div class="hexBorder hexBorder-l reveal">
+					<div class="hexTop"></div>
+					<div class="hexBottom"></div>
+				</div>
+			</div>
+			<div class="hexagonBox">
+				<div class="hexBorder">
+					<div class="hexTop"></div>
+					<div class="hexBottom"></div>
+				</div>
+			</div>
+			<div class="hexagonBox hexagonBox-r">
+				<div class="hexBorder hexBorder-r reveal">
+					<div class="hexTop"></div>
+					<div class="hexBottom"></div>
+				</div>
+			</div>
+			<div class="pageItem2">
+				<a href="#services1" class="active" idnum="1"></a>
+				<a href="#services2" idnum="2"></a>
+			</div>
+			<div class="blue-bg blue-bg-hexagon"></div>
+		</section>
+
+		<!-- games -->
+		<section class="home-box reveal" id="three">
+			<div class="home-title reveal">
+				OUR<span style="padding-left: 0.5rem;">GAMES</span>
+			</div>
+			<div class="home-box-content">
+				<div class="home-nav-box card">
+					<div class="image image-1">
+						<div class="pc">
+							<img src="./images/pc/games/live/live_5_n.png" style="opacity: 0;">
+							<img class="fadeShow icon icon-l" src="./images/pc/games/live/live_4.png" style="width: 23rem; top: -1rem; left: -1rem; transition-delay: 0.5s;">
+							<img class="fadeHide icon icon-r" src="./images/pc/games/live/live_3.png" style="top: -1rem; right: 1rem;">
+							<img class="fadeShow" src="./images/pc/games/live/live_2.png">
+							<img src="./images/pc/games/live/live_1_n.png" style="top: 3.2rem">
+						</div>
+						<div class="h5">
+							<img src="./images/h5/games/home_live.jpg">
+						</div>
+						
+						<div class="content-details islive-details">
+							<div>Live<span>Casino</span></div>
+							<p class="game-button">More</p>
+						</div>
+					</div>
+
+				</div>
+				<div class="home-nav-box card" style="--i: 1">
+					<div class="image image-2">
+						<div class="pc">
+							<img src="./images/pc/games/poker/poker_n.jpg" style="opacity: 0;">
+							<!-- <img class="moveX2 icon" src="./images/pc/games/poker/poker_6.jpg" style="width: 130%; top: -7rem; left: -3.5rem"> -->
+							<img class="shake4 icon icon-r" src="./images/pc/games/poker/poker_5.png" style="width: 4rem; top: 5rem; right: 0.5rem">
+							<img class="shake3 icon icon-r" src="./images/pc/games/poker/poker_4.png" style="width: 2rem; top: 1.5rem; right: 5rem">
+							<img class="shake4 icon icon-l" src="./images/pc/games/poker/poker_3.png" style="width: 3rem; top: 1rem; left: 4rem">
+							<img class="shake3 icon icon-l" src="./images/pc/games/poker/poker_2.png" style="width: 4rem; top: 5rem; left: 0;">
+							<img class="p1" src="./images/pc/games/poker/poker_1_n.png">
+						</div>
+						<div class="h5">
+							<img src="./images/h5/games/home_poker.jpg">
+						</div>
+						<div class="content-details">
+							<div>BG<span>Poker</span></div>
+							<p class="game-button">More</p>
+						</div>
+					</div>
+				</div>
+				<div class="home-nav-box card" style="--i: 1">
+					<div class="image">
+						<div class="pc">
+							<img src="./images/pc/games/daisen/daisen_6_n.png">
+							<img class="shake2 icon icon-l" src="./images/pc/games/daisen/daisen_5.png" style="width: 5rem; top: 10rem; left: 2rem;">
+							<img class="shake1 icon icon-l" src="./images/pc/games/daisen/daisen_4.png" style="top: 5rem; left: -0.5rem">
+							<img class="shake2 icon icon-r" src="./images/pc/games/daisen/daisen_3.png" style="width: 7.5rem; top: -0.5rem;">
+							<img class="shake1" src="./images/pc/games/daisen/daisen_2.png" style="top: 0.5rem;">
+							<img class="p2" src="./images/pc/games/daisen/daisen_1_n.png">
+						</div>
+						<div class="h5">
+							<img src="./images/h5/games/home_daisen.jpg">
+						</div>
+						<div class="content-details">
+							<div class="newline">BG<span>Daisen xiyou</span></div>
+							<p class="game-button">More</p>
+						</div>
+					</div>
+				</div>
+				<div class="home-nav-box card" style="--i: 1">
+					<div class="image">
+						<div class="pc">
+							<img src="./images/pc/games/xiyou/xiyou_6_n.png">
+							<img src="./images/pc/games/xiyou/xiyou_5_n.png">
+							<img class="shake1" src="./images/pc/games/xiyou/xiyou_4.png" style="top: 1rem; left: 1rem">
+							<img class="shake2 icon icon-l" src="./images/pc/games/xiyou/xiyou_3.png" style="top: 7rem; left: 0">
+							<img class="shake1 icon icon-r" src="./images/pc/games/xiyou/xiyou_2.png" style="top: 2rem; right: 0">
+							<img class="shake2 icon" src="./images/pc/games/xiyou/xiyou_1.png" style="width: 12.5rem; top: 1.2rem">
+						</div>
+						<div class="h5">
+							<img src="./images/h5/games/home_xiyou.jpg">
+						</div>
+						<div class="content-details">
+							<div class="newline">BG<span>XiYou xiyou</span></div>
+							<p class="game-button">More</p>
+						</div>
+					</div>
+				</div>
+				<div class="home-nav-box card" style="--i: 3">
+					<div class="image">
+						<div class="pc">
+							<img src="./images/pc/games/fishing/fishing_9_n.png">
+							<img class="shake3 icon icon-l" src="./images/pc/games/fishing/fishing_8.png" style="width: 7rem; left: 0;">
+							<img class="shake4 icon icon-l" src="./images/pc/games/fishing/fishing_7.png" style="width: 6rem; top: 8rem; left: 1rem;">
+							<img class="shake3 icon icon-r" src="./images/pc/games/fishing/fishing_6.png" style="width: 1.5rem; top: 3rem; right: 1rem;">
+							<img class="shake4 icon icon-l" src="./images/pc/games/fishing/fishing_5.png" style="width: 2rem; top: 0.5rem; left: 10rem;">
+							<img class="icon icon-l" src="./images/pc/games/fishing/fishing_4_n.png" style="width: 15rem; top: 6rem; right: -4rem;">
+							<img class="icon icon-r" src="./images/pc/games/fishing/fishing_3_n.png" style="width: 15rem; top: 0.5rem; right: 2rem;">
+							<img class="shake3 icon icon-r" src="./images/pc/games/fishing/fishing_2.png" style="width: 6rem; top: 8.5rem; right: 2.5rem;">
+							<img class="shake4 icon icon-l" src="./images/pc/games/fishing/fishing_1.png" style="width: 2.5rem; top: 4rem; left: 2.3rem;">
+						</div>
+						<div class="h5">
+							<img src="./images/h5/games/home_fishing.jpg">
+						</div>
+						<div class="content-details">
+							<div class="newline">BG<span>Fishing Master</span></div>
+							<p class="game-button">More</p>
+						</div>
+					</div>
+				</div>
+				<div class="home-nav-box card" style="--i: 0">
+					<div class="image image-6">
+						<div class="pc">
+							<img src="./images/pc/games/galaxy/galaxy_7_n.png">
+							<img class="shake1 icon icon-r" src="./images/pc/games/galaxy/galaxy_6.png" style="width: 11rem; right: 13rem;">
+							<img class="shake2 icon icon-l" src="./images/pc/games/galaxy/galaxy_5.png" style="width: 20rem; left: 6rem;">
+							<img class="shake2 icon icon-r" src="./images/pc/games/galaxy/galaxy_4.png" style="width: 21rem">
+							<img class="shake1 icon icon-r" src="./images/pc/games/galaxy/galaxy_3.png" style="width: 11rem; top: 2rem;">
+							<img class="shake2 icon icon-l" src="./images/pc/games/galaxy/galaxy_2.png" style="width: 11rem; top: 7rem; left: 9rem">
+							<img class="shake1 icon icon-l" src="./images/pc/games/galaxy/galaxy_1.png" style="width: 10rem; top: 2rem; left: 2rem">
+						</div>
+						<div class="h5">
+							<img src="./images/h5/games/home_galaxy.jpg">
+						</div>
+						<div class="content-details w-details">
+							<div>BG<span>Galaxy Treasure</span></div>
+							<p class="game-button">More</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="blue-bg"></div>
+		</section>
+
+		<!-- news -->
+		<section class="home-box reveal" id="four">
+			<div class="news-content-m h5">
+				<div class="hexagon-block-top">
+					<div class="hexagonTop">
+						<span class="hexagon-title1">LATEST</span>
+						<span class="hexagon-title2">NEWS</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="h5">
+				<div class="slide2 slider-wrapper news-content">
+					<div class="news-left">
+						<div class="news-date reveal h5">2023/11/13</div>
+						<div class="news-image">
+							<img src="./images/pc/news/home_news_01.jpg" class="h5">
+							<div class="imageMask imageMask-left reveal"></div>
+						</div>
+						<div class="news-article reveal">
+							<div class="news-title news-title1">Big Gaming</div>
+							<div class="news-title news-title2">targets European …</div>
+							<div class="news-text">Big Gaming, a leading global B2B live casino provider,
+								will make its debut at SiGMA Europe 2023.
+								This event marks a crucial stage in Big Gaming’s overseas expansion strategy.
+								The company aims to broaden its service offerings and deliver innovative
+								and high-quality live casino products to the European market.
+							</div>
+						</div>
+					</div>
+
+					<div class="news-right">
+						<div class="news-date reveal h5">2023/11/13</div>
+						<div class="news-image">
+							<img src="./images/pc/news/home_news_02.jpg" class="h5">
+							<div class="imageMask imageMask-right reveal"></div>
+						</div>
+						<div class="news-article reveal">
+							<div>
+								<div class="news-title news-title1">Big Gaming</div>
+								<div class="news-title news-title2">targets European …</div>
+							</div>
+							<div class="news-text">Big Gaming, a leading global B2B live casino provider,
+								will make its debut at SiGMA Europe 2023.
+								This event marks a crucial stage in Big Gaming’s overseas expansion strategy.
+								The company aims to broaden its service offerings and deliver innovative
+								and high-quality live casino products to the European market.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="news-content pc">
+				<div class="news-left">
+					<div class="news-date reveal h5">2023/11/13</div>
+					<div class="news-image">
+						<img src="./images/pc/news/home_news_1.png">
+						<div class="imageMask imageMask-left reveal"></div>
+					</div>
+					<div class="news-article reveal">
+						<div class="news-title news-title1">Big Gaming</div>
+						<div class="news-title news-title2">targets European …</div>
+						<div class="news-text">Big Gaming, a leading global B2B live casino provider,
+							will make its debut at SiGMA Europe 2023.
+							This event marks a crucial stage in Big Gaming’s overseas expansion strategy.
+							The company aims to broaden its service offerings and deliver innovative
+							and high-quality live casino products to the European market.
+						</div>
+					</div>
+				</div>
+				<div class="news-center">
+					<div class="hexagon-block">
+						<div class="hexagonTop">
+							<div class="hexagon-title1">LATEST</div>
+							<div class="hexagon-title2">NEWS</div>
+						</div>
+						<div class="hexagonBottom">
+							<div class="hexagon-text">
+								We offer Global • Composite • Poker Games White-label
+								2023 • Limited-time bonuses for
+								opening casinos
+								Promotion period: Apr. 1 to May 31
+								New clients
+								Free with activation
+								2 months’ service fees
+								The leader in Asia • Quickest site set-up • Most stable profits
+								major kinds of white-label services, namely Poker games, and composite
+								white-labeling service.
+								<div class="hexagon-text-mask"></div>
+							</div>
+							<div class="hexagon-tip">ALL NEWS</div>
+							<div class="hexagon-btn">
+								<span>
+									<img src="./images/pc/news/home_news_left.png">
+								</span>
+								<span>
+									<img src="./images/pc/news/home_news_right.png">
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="news-right">
+					<div class="news-date reveal h5">2023/11/13</div>
+					<div class="news-image">
+						<img src="./images/pc/news/home_news_2.png">
+						<div class="imageMask imageMask-right reveal"></div>
+					</div>
+					<div class="news-article reveal">
+						<div>
+							<div class="news-title news-title1">Big Gaming</div>
+							<div class="news-title news-title2">targets European …</div>
+						</div>
+						<div class="news-text">Big Gaming, a leading global B2B live casino provider,
+							will make its debut at SiGMA Europe 2023.
+							This event marks a crucial stage in Big Gaming’s overseas expansion strategy.
+							The company aims to broaden its service offerings and deliver innovative
+							and high-quality live casino products to the European market.
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="news-content-m h5">
+				<div class="hexagon-block-bottom">
+					<div class="hexagonBottom">
+						<div class="hexagon-text">
+							We offer Global • Composite • Poker Games White-label
+							2023 • Limited-time bonuses for
+							opening casinos
+							Promotion period: Apr. 1 to May 31
+							New clients
+							Free with activation
+							2 months’ service fees
+							The leader in Asia • Quickest site set-up • Most stable profits
+							major kinds of white-label services, namely Poker games, and composite
+							white-labeling service.
+							<div class="hexagon-text-mask"></div>
+						</div>
+						<div class="hexagon-tip">ALL NEWS</div>
+						<div class="hexagon-btn">
+							<span>
+								<img src="./images/pc/news/home_news_left.png">
+							</span>
+							<span>
+								<img src="./images/pc/news/home_news_right.png">
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<!-- footer -->
+		<section class="home-box home-footer" id="five">
+			<div class="home-title footer-title">
+				BUSINESS
+				<span>COLLABORATION</span>
+			</div>
+			<div class="marquee">
+				<div class="marquee-items">
+					<img src="./images/pc/business/cooperate_logo.png">
+					<img src="./images/pc/business/cooperate_logo.png">
+				</div>
+			</div>
+			<div class="footer-text">
+				<div class="text">
+					Your<span>best partner</span>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div>
+					<div class="footer-left">
+						<div>
+							<a href="#">
+								<img src="./images/pc/footer/arrow.png">
+								<img src="./images/pc/footer/arrow_h.png">
+								<span>Home</span>
+							</a>
+							<a href="#">
+								<img src="./images/pc/footer/arrow.png">
+								<img src="./images/pc/footer/arrow_h.png">
+								<span>Services</span>
+							</a>
+							<a href="#">
+								<img src="./images/pc/footer/arrow.png">
+								<img src="./images/pc/footer/arrow_h.png">
+								<span>News</span>
+							</a>
+						</div>
+						<div>
+							<a href="#">
+								<img src="./images/pc/footer/arrow.png">
+								<img src="./images/pc/footer/arrow_h.png">
+								<span>About</span>
+							</a>
+							<a href="#">
+								<img src="./images/pc/footer/arrow.png">
+								<img src="./images/pc/footer/arrow_h.png">
+								<span>Games</span>
+							</a>
+							<a href="#">
+								<img src="./images/pc/footer/arrow.png">
+								<img src="./images/pc/footer/arrow_h.png">
+								<span>Contact Us</span>
+							</a>
+						</div>
+						<div class="policy">
+							<a href="#">
+								<span>Terms and Policy</span>
+							</a>
+						</div>
+					</div>
+					<div class="footer-center">
+						<div class="footer-logo">
+							<img src="./images/pc/footer/logo-e.png">
+						</div>
+						<div class="footer-center-icon">
+							<span>
+								<img src="./images/pc/footer/in.png">
+								<img src="./images/pc/footer/in_h.png">
+							</span>
+							<span>
+								<img src="./images/pc/footer/fb.png">
+								<img src="./images/pc/footer/fb_h.png">
+							</span>
+							<span>
+								<img src="./images/pc/footer/tw.png">
+								<img src="./images/pc/footer/tw_h.png">
+							</span>
+							<span>
+								<img src="./images/pc/footer/ig.png">
+								<img src="./images/pc/footer/ig_h.png">
+							</span>
+						</div>
+						<div class="footer-footer">COPYRIGHT © 2023 BG GROUP .ALL RIGHTS RESERVED</div>
+					</div>
+					<div class="footer-right">
+						<div>
+							<img src="./images/pc/footer/email.png">
+							<span>email：sales@biggaming.cc</span>
+						</div>
+						<div>
+							<img src="./images/pc/footer/wa.png">
+							<span>whatsApp：+63 956 339 7666</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<script src="./js/script.js"></script>
+	<script>
+		$('.pageItem a').click(function (e) {
+			e.preventDefault();
+			let href = $(this).attr('href');
+			let offsetTop = href === '#' ? 0 : $(href).offset().top;
+			$('html, body').stop().animate(
+				{
+					scrollTop: offsetTop,
+				},
+				500
+			);
+		});
+		$('.pageItem2 a').click(function (e) {
+			e.preventDefault();
+			let href = $(this).attr('href');
+			let offsetRight = href === '#' ? 0 : $(href).offset().right;
+			$('html, body').stop().animate(
+				{
+					scrollTop: offsetRight,
+				},
+				500
+			);
+		});
+		
+		$(function(){
+			const card = $('.card');
+			card.on('mousemove', function (e) {
+				const x = e.clientX - $(this).offset().left + $(window).scrollLeft();
+				const y = e.clientY - $(this).offset().top + $(window).scrollTop();
+				const rX = map(y, 0, $(this).height(), -22, 22);
+				const rY = map(x, 0, $(this).width(), -22, 22);
+				const w = $(this).width()
+				if (x >(w/2)) {
+					$('.image').addClass('shineRight').removeClass('shineLeft')
+				} else {
+					$('.image').removeClass('shineRight').addClass('shineLeft')
+				}
+				$(this).children('.image').css('transform', 'rotateY(' + rY + 'deg)' + '' + 'rotateX(' + -rX + 'deg)');
+			});
+
+			card.on('mouseenter', function () {
+				$(this).children('.image').css({
+					transition: "all " + 0.05 + "s" + " linear",
+				});
+			});
+		
+			card.on('mouseleave', function () {
+				$(this).children('.image').css('transform', 'rotateY(' + 0 + 'deg)' + '' + 'rotateX(' + 0 + 'deg)');
+			});
+			function map(x, in_min, in_max, out_min, out_max) {
+				return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+			}
+		});
+
+		(function () {
+			$('.nav1').on('click', function () {
+				$('.nav-ham').toggleClass('on');
+				$('.nav-ham-close').toggleClass('on');
+				$('.nav-main').toggleClass('on');
+				$('.nav-mask1').toggleClass('on');
+			})
+
+			$('.lang-box-h5').on('click', function () {
+				$('.lang-bottom').toggleClass('on2');
+				$('.nav-mask2').toggleClass('on2');
+			})
+			$('.nav2').on('click', function () {
+				$('.nav-mask1').removeClass('on');
+				$('.nav-mask2').removeClass('on2');
+				$('.lang-bottom').removeClass('on2');
+				$('.nav-main').removeClass('on');
+				$('.nav1').removeClass('on');
+			})
+		})();
+
+		function reveal() {
+			let reveals = document.querySelectorAll('.reveal');
+			for (let i = 0; i < reveals.length; i++) {
+				let windowHeight = window.innerHeight;
+				let eleTop = reveals[i].getBoundingClientRect().top;
+				let eleVisible = 150;
+				if (eleTop < windowHeight - eleVisible) {
+					reveals[i].classList.add('active');
+				} else {
+					reveals[i].classList.remove('active');
+				}
+			}
+		}
+		window.addEventListener("scroll", reveal);
+
+		$('.slide').wrap('<div class="slider-wrap" />');
+		$('.slide').slick({
+			dots: true,
+			infinite: true,
+			speed: 500,
+			slidesToScroll: 1,
+			autoplay: true,
+			autoplaySpeed: 5000, //  Slide Delay
+		});
+		
+		$('.slide2').slick({
+			dots: true,
+			infinite: false,
+			speed: 500,
+			slidesToScroll: 1,
+			autoplay: false,
+			autoplaySpeed: 5000, //  Slide Delay
+		});
+		
+		$('.hexagon-btn').on("click", function () {
+			$('.hexagon-text-mask').after().addClass('fadeUp');
+			setTimeout(RemoveClass, 500);
+		});
+
+		function RemoveClass() {
+			$('.hexagon-text-mask').removeClass('fadeUp');
+		}
+
+		let btn = $('.footerToTop');
+		$(window).scroll(function () {
+			let pos = $(window).scrollTop();
+			// if (pos > 600) {
+			// 	btn.addClass('show');
+			// } else {
+			// 	btn.removeClass('show');
+			// }
+			if (pos >= 100) {
+				$('section').each(function(i) {
+					if ($(this).position(i).top <= pos) {
+						$('.pageItem a.active').removeClass('active');
+						$('.pageItem a').eq(i).addClass('active');
+					}
+				});
+			} 
+		});
+	</script>
+
+</body>
+
+</html>
